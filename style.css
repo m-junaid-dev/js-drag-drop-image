@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 450px;
+    justify-content: center;
+    align-content: center;
+}
+
+.container .box{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    border: 2px  solid rgb(255, 255, 255);
+}
+
+.box .image{
+    height: 100%;
+    width: 100%;
+    background-image: url(./Junaid\ 3.png);
+    background-size: cover;
+    cursor: pointer;
+    background-position: center;
+}
+
+.box.hovering{
+    border: 2px dashed white;
+}
